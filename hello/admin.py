@@ -1,13 +1,15 @@
 """Django Admin
 """
 from django.contrib import admin
-from hello.models import Hello
+from hello.models import Messages
 
-class HelloAdmin(admin.ModelAdmin):
-    """HelloAdmin
+
+class MessagesAdmin(admin.ModelAdmin):
+    """MessagesAdmin
     """
     list_display = ('message', 'created', 'updated',)
     search_fields = ('message', 'created',)
     ordering = ('created',)
 
-admin.site.register(Hello, HelloAdmin)
+
+admin.site.register(Messages, MessagesAdmin)

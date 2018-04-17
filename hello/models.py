@@ -5,8 +5,9 @@
 from django.db import models
 from django.utils import timezone
 
-class Hello(models.Model):
-    """만나면 반가워서 Hello
+
+class Messages(models.Model):
+    """만나면 반가워서 하는말
     """
 
     message = models.CharField('인사말', max_length=250)
@@ -17,5 +18,6 @@ class Hello(models.Model):
         return self.message
 
     class Meta:
-        verbose_name = '헬로'
-        verbose_name_plural = '헬로~'
+        # db_table = '사용자 정의 테이블명'
+        verbose_name = '인사말'
+        verbose_name_plural = '인사말들'
