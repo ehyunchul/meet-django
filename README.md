@@ -15,7 +15,7 @@ $ pip install pylint_django
 
 # Django 2.0 Document tutorial
  - [django intro](https://docs.djangoproject.com/en/2.0/intro/)
- - [django intro(kr)](https://docs.djangoproject.com/kr/2.0/intro/)
+ - [django intro(kr)](https://docs.djangoproject.com/ko/2.0/intro/)
 
 공식 튜토리얼 시작하기
 
